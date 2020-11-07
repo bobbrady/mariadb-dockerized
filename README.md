@@ -12,7 +12,7 @@ Use the repo Dockerfile to build a MariaDB Docker image
 docker build -t <your_tag_prefix>/mariadb .
 ```
 
-Run a Docker container baseed on the image, run config and data directories as shared volumes on your localhost.
+Run a Docker container baseed on the image, run config and data directories as shared volumes on your localhost.  Make container DB port 3306 avaiable to the host system.
 ```shell
  docker run -d --name mariadb_dev \
 -p 3306:3306 \
